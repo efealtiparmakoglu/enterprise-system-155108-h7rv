@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: enterprise-system-155108-h7rv-service
+spec:
+  selector:
+    app: enterprise-system-155108-h7rv
+  ports:
+  - port: 80
+    targetPort: 8000
+  type: ClusterIP
